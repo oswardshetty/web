@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd5b5c87c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/new.jpg" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science</p>
+            <h1>Hello! <span>Manvi M Shetty</span> here.....</h1>
+        </div>
+    
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="abt-col-1">
+                 <img src="image/new1.jpg">
+            </div>
+            <div class="abt-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Helloo, I am Manvi. Nice To Meet You All.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Language</span><br>Python<br>Basic in Java</li>
+                        <li><span>Web Development</span><br>Html,Css</li>
+                        <li><span>Computer Network</span><br></li>
+                        <li><span>Database Managment System</span><br></li>
+                        <li><span>Artificial Intelligence</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019</span><br>10th class<br></li>
+                        <li><span>2021</span><br>PUC</li>
+                        <li><span>2025</span><br>Engineering</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>    
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-broom"></i>
+                <h2>
+                    Web Design
+                </h2>
+                <p>Designed my own porfolio including html,css,javascript</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>
+                    Language
+                </h2>
+                <p>Python, Basic in Java and C</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hippo"></i>
+                <h2>
+                    Computer Network
+                </h2>
+                <p>Connecting computers to share information and resources.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-dribbble"></i>
+                <h2>
+                    Database Managment System
+                </h2>
+                <p>Software for storing and managing data</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brush"></i>
+                <h2>
+                    Artificial Intelligence
+                </h2>
+                <p>Making computers perform tasks that usually need human intelligence.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work (Presentation)</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="image/download.jpeg">
+                <div class="layer">
+                    <h3>Vehicle Detection using YOLO-V8 and Open CV</h3>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/1-s2.0-S0030402615003198-gr1.jpg">
+                <div class="layer">
+                    <h3>Histogram Preprocessing: Stretching, Shrinking, Sliding, Equalization.</h3>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-solid fa-share"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/manvi_m_shetty/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/manvi-m-shetty-212506316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="image/Manvi.M.Shetty(R).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" requires>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Manvi. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks ){
+            tablink.classList.remove("active-links")
+        }
+        for (tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
